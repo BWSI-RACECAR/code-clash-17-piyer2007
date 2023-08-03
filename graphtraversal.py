@@ -90,11 +90,11 @@ class Solution:
             traveled = []
             while cur_node != 'Finish':
                 traveled += cur_node
-                nodes = get_outgoing_edges(self, cur_nodes)
+                nodes = Graph.get_outgoing_edges(self, cur_nodes)
                 min = 100000
                 next_node = cur_node
                 for i in nodes:
-                    val = value(self, cur_node, i)
+                    val = Graph.value(self, cur_node, i)
                     if (val < min and not travelled.containing(i)):
                         min = val
                         next_node = i
