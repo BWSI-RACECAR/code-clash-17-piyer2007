@@ -90,7 +90,7 @@ class Solution:
             traveled = []
             while cur_node != 'Finish':
                 traveled += cur_node
-                nodes = Graph.get_outgoing_edges(self, cur_nodes)
+                nodes = Graph.get_outgoing_edges(self, cur_node)
                 min = 100000
                 next_node = cur_node
                 for i in nodes:
