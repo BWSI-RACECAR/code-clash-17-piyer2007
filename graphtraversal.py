@@ -87,7 +87,7 @@ class Solution:
             #TODO: Write code below to return an int with the solution to the prompt.
             cur_node = start_node
             sum = 0
-            traveled = {}
+            traveled = []
             while cur_node != 'Finish':
                 traveled += cur_node
                 nodes = get_outgoing_edges(cur_nodes)
