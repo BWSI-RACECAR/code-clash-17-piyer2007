@@ -89,7 +89,7 @@ class Solution:
             sum = 0
             traveled = {}
             while cur_node != 'Finish':
-                traveled.append(cur_node)
+                traveled += cur_node
                 nodes = get_outgoing_edges(cur_nodes)
                 min = 100000
                 next_node = cur_node
